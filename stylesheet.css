@@ -1,3 +1,5 @@
+/*This can be refactored to be more succinct*/
+
 body {
   font-size: small;
   font-family: arial, sans-serif;
@@ -94,7 +96,7 @@ body {
 .results-list {
   position: absolute;
   width: 600px;
-  height: 342px;
+  height: auto;
   margin-top: 120px;
   margin-left: 167px;
 }
@@ -102,7 +104,8 @@ body {
 .top-result {
   border: medium none;
   box-shadow: 1px .5px 2px #ccc, -1px 2px 2px #ccc;
-  padding: 25px;
+  width: 550px;
+  padding-left: 10px;
 }
 
 .top-result-title {
@@ -117,18 +120,157 @@ body {
   display: block;
 }
 
+.top-result-list li {
+  font-size: 17px;
+  margin: 5px;
+  color: #222;
+}
+
+.top-result-list ol {
+  padding-left: 23px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .more a{
   color: #808080;
+  padding-left: 23px;
+  font-size: 15px;
 }
 
 .more a:hover {
   text-decoration: underline;
 }
 
+.site-links {
+  margin-top: 15px;
+}
+
 .site-links a {
   color: #1a0dab;
+  font-size: 18px;
+}
+
+.site-links a:hover {
+  text-decoration: underline;
+}
+
+.top-result-list .full-url {
+  color: #006621;
+  padding-bottom: 15px;
 }
 
 .full-url {
   color: #006621;
+  font-size: 14px;
+}
+
+.content-preview {
+  color: #545454;
+  margin-bottom: 24px;
+  font-weight: normal;
+  line-height: 1.4;
+  font-size: small;
+}
+
+.content-date {
+  color: #808080;
+}
+
+.emphasis {
+  color: #6a6a6a;
+  font-weight: bold;
+}
+
+.about-result a {
+  color: #777;
+  position: relative;
+  left: 350px;
+  top: 4px;
+}
+
+.about-result a:hover {
+  text-decoration: underline;
+}
+
+.about-result li {
+  display: inline;
+  padding: 16px;
+}
+
+.related-searches-title {
+  margin-bottom: 25px;
+}
+
+.related-searches-title p{
+  font-size: 18px;
+  color: #222;
+}
+
+.related-searches-links td {
+  width: 320px;
+  padding: 2px;
+}
+
+.related-searches-links a {
+  color: #1a0dab;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.related-searches-links a:hover {
+  text-decoration: underline;
+}
+
+.related-searches-links .emphasis {
+  font-weight: bold;
+  color: #1a0dab;
+}
+
+.gooogle {
+  margin-top: 25px;
+}
+
+.gooogle img {
+  width: 295px;
+  height: 45px;
+  margin-left: 150px;
+}
+
+.gooogle-links {
+  margin-left: 190px;
+}
+
+.gooogle-links li {
+  display: inline;
+}
+
+.gooogle-links a {
+  color: #4285f4;
+  padding-left: 6px;
+}
+
+.gooogle-links a:hover {
+  text-decoration: underline;
+}
+
+.gooogle-links .next {
+  margin-left: 35px;
+}
+
+.footer-links {
+  margin-top: 75px;
+}
+
+.footer-links a {
+  color: #777;
+}
+
+.footer-links a:hover {
+  color: #000;
+}
+
+.footer-links li {
+  display: inline;
+  padding: 10px;
 }
